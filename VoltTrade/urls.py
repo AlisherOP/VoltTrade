@@ -32,6 +32,7 @@ urlpatterns = [
 ]
 
 """
+
 http://127.0.0.1:8000/api/wallets/
 http://127.0.0.1:8000/api/wallets/buy_coin/
 """

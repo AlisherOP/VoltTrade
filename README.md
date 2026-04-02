@@ -13,3 +13,4 @@ A professional trading backend built with **Django Rest Framework** and **Postgr
 This project is fully containerized with **Docker Compose**.
 1. `docker-compose up --build`
 2. Access Swagger UI at `/api/docs/`
+3. Access the wallet at `http://127.0.0.1:8000/api/wallets/`
