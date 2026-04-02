@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="raw">
+            <div class="col-md-4 offset-md-4 mt-5"><!--offset move left right--><!--mt for up and down-->
+                <div class="card"> <!--to desplay the login, has to parts -->
+                    <!-- the header and the  body-->
+                    <div class="card-header bg-info">
+                        <div class="card-title"> <!-- title for the card-->
+                            Register
+                        </div>
+                    </div>
+                    <!-- THe body part -->
+                    <div class="card-body">
+                        <form method="POST">
+                            {%csrf_token %}
+                            {%for field in form%}
+                                <div class="form-group">
+                                    {{field.name}}
+                                    <br><!-- line break -->
+                                    {{field}}
+                                </div>
+                            {%endfor%}
+                            <button class="btn-info" type="submit">Signup</button>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>    
+</html>
+
+
